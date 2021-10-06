@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>Meter {{meter}} - channel {{ channel }}</h1>
+  <h1>The cool meter thingy {{meter}} - channel {{ channel }}</h1>
 {% endblock %}
 
 {% block content %}
   <table>
     <caption>Measurement values for {{meter}}:{{ channel }}</caption>
     <tr>
-      <th scope="col">Date</th>
-      <th scope="col">Value</th>
-      <th scope="col">Unit</th>
+      <th scope="col">Time</th>
+      <th scope="col">Sensor ID</th>
+      <th scope="col">Temperature</th>
     </tr>
   {% for value in measurements %}
     <tr>

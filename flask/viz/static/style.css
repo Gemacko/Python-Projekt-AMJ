@@ -1,9 +1,11 @@
 /* some very basic styling to make it somewhat less boring */
 
 body {
-    background-color: gainsboro;
+    background-color: rgb(92, 231, 0);
+    /* färg utanför huvudrutan */
+
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     justify-content: center;
 }
 
@@ -16,10 +18,13 @@ th {
 }
 
 .main-content {
-    background-color: rgb(230, 228, 228);
-    border: 2px solid white;
-    border-radius: 0.5em;
-    min-width: 400px;
+    background-color: rgb(255, 0, 0);
+    /* färg innanför rutan */
+    border: 10px solid rgb(8, 3, 255);
+    /* färg runt rutan */
+    border-radius: 9.5em;
+    /*hur rund rutan är*/
+    min-width: 40px;
     padding: 2rem;
     width: 70%;
 }

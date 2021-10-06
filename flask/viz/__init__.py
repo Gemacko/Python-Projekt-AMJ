@@ -1,5 +1,6 @@
 from flask import Flask, render_template, flash
 import datetime
+import csv
 
 # This creates the flask application and configures it
 # flask run will use this to start the application properly
@@ -15,14 +16,16 @@ UNITS = {
     1: "RH"
 }
 
+
+
 # This is a placeholder that returns a fixed set of meters
 # in a proper system this would look in a database or in
 # the file system for a list of meters in the system
 def get_meters():
-    meters = [ ("1234", 0),
-               ("1234", 1),
-               ("1235", 0),
-               ("1236", 0)]
+    meters = [ ("Nr UNO", 0),
+               ("2nd", 1),
+               ("3", 0),
+               ("IV", 0)]
     return meters
 
 # This is a placeholder that returns a fixed set of 
@@ -41,10 +44,23 @@ def get_measurements(meter, channel):
     measurements = []
     time = 1624537020
     for _ in range(20):
-        date = datetime.datetime.fromtimestamp(time)
-        value = time % 27
-        measurements.append((date, value, UNITS[0]))
-        time = time - 10 * 60
+        data = "a;b;c;d"
+    for col in data.split(";"):
+
+
+        with open("temp.csv", "r") as file:
+            file.readline() # read one line and just throw it away
+            other_lines = file.readlines()
+        for line in other_lines:
+            data = line.split(";")
+            value = (data[0])
+
+
+
+        
+            date = datetime.datetime.fromtimestamp(time)   
+            measurements.append((date, value, UNITS[0]))
+            time = 3
     return measurements
 
 # @app.route registers a handler for a specific URL
