@@ -24,17 +24,20 @@ client.loop_start()
 
 # send a random value every second
 while True:
-    time.sleep(0.01)
-    id = 1
-    rnd = 69
-    print(str(rnd))
+    time.sleep(5)
+    SensorID = 1
+    temp = 69
+    tid = 12
+    index = 5
+    print(str(temp))
     # to pack data into a "C struct" (i.e. bytes object)
     # use the struct package. The first argument is
     # a format string describing the data format
     # and then all the data that should be packed into
     # it. In this case we have ! = network byte order
     # Q = unsigned 8 bytes, b = signed 1 byte
-    data = struct.pack("!Qb", id, rnd)
+    
+    data = struct.pack("!bqqq", SensorID, temp, tid, index)
 
     # publish the data to the topic some/topic
     # using the packed struct as payload and
