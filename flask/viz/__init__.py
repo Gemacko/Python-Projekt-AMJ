@@ -88,7 +88,7 @@ def start_page():
 @app.route("/meter/<meter>/channel/<channel>")
 
 def show_measurements(meter, channel):
-    for i in line(4):
+    for i in (4):
         measurements = []
         data = []
         data = read__temp()
