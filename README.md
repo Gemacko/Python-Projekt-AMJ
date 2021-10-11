@@ -6,15 +6,15 @@ No warranty, use at your own risk!!!
 No rights reserved.
 
 # General Info
-In this project we will be showing you how to use the Raspberry Pi Zero and the Temperature Sensor DS18B20 to read the temperature and see it on a screen. We are also going to use the Python 3.9, which is the one of the lastest wersion of Python software.
-
+In this project we will be showing you how to use the Raspberry Pi Zero and the Temperature Sensor DS18B20 to read the temperature and see it on a screen. We are also going to use the Python 3.9, which is the one of the lastest wersion of Python software. (2021 oct)
+ 
 # Software
 Visual Studio Code
 
 Python 3,9
 
 # Specs
-We are usig the 3,3VDC output from Raspberry Pi Zero to power our Temperature Sensor DS18B20
+We will be using the 3,3VDC output from Raspberry Pi Zero to power our Temperature Sensor DS18B20
 
 # Requirements:
 
