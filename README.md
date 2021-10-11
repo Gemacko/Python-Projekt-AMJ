@@ -29,8 +29,12 @@ Cable (USB-A to USB-B Micro)
 
 Temperature Sensor DS18B20
 
-# Describing of the function
-We are going to use the 
+# Describing of the calbe colour
+Black - Ground
+
+Red - 3,3VDC (3V3 power)
+
+Blue - Signal (Gipo 4 (GPCLK0))
 
 ![image](https://user-images.githubusercontent.com/89801012/136822043-9c113cfb-48aa-455a-9c81-807e81f07968.png)
 ![image](https://user-images.githubusercontent.com/89801012/136826972-e9751ea3-d26f-4e75-8767-9b3e3461e4ec.png)
