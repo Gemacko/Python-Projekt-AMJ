@@ -27,9 +27,11 @@ Resistor 4,7kohm
 
 Cable (USB-A to USB-B Micro) 
 
+Connecting Cables 
+
 Temperature Sensor DS18B20
 
-# Describing of the calbe colour
+# Describing of the cable colour
 Black - Ground
 
 Red - 3,3VDC (3V3 power)
